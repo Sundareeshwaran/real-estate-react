@@ -58,36 +58,43 @@ const Navbar = () => {
             alt=""
           />
         </div>
-        <ul className="flex flex-col items-center gap-4 mt-5 px-5 text-lg font-medium">
-          <a
-            onClick={() => setShowMobileMenu(false)}
-            href="#Header"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            Home
-          </a>
-          <a
-            onClick={() => setShowMobileMenu(false)}
-            href="#About"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            About
-          </a>
-          <a
-            onClick={() => setShowMobileMenu(false)}
-            href="#Projects"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            Projects
-          </a>
-          <a
-            onClick={() => setShowMobileMenu(false)}
-            href="#Testimonials"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            Testimonials
-          </a>
-        </ul>
+        <div className="flex flex-col gap-32">
+          <ul className="flex flex-col items-center gap-4 mt-5 px-5 text-lg font-medium">
+            <a
+              onClick={() => setShowMobileMenu(false)}
+              href="#Header"
+              className="px-4 py-2 rounded-full inline-block"
+            >
+              Home
+            </a>
+            <a
+              onClick={() => setShowMobileMenu(false)}
+              href="#About"
+              className="px-4 py-2 rounded-full inline-block"
+            >
+              About
+            </a>
+            <a
+              onClick={() => setShowMobileMenu(false)}
+              href="#Projects"
+              className="px-4 py-2 rounded-full inline-block"
+            >
+              Projects
+            </a>
+            <a
+              onClick={() => setShowMobileMenu(false)}
+              href="#Testimonials"
+              className="px-4 py-2 rounded-full inline-block"
+            >
+              Testimonials
+            </a>
+          </ul>
+          <div className="flex justify-center">
+            <button className="bg-gray-900 text-white px-8 py-2 rounded-full">
+              SignUp
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

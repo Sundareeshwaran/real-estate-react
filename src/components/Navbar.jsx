@@ -47,7 +47,7 @@ const Navbar = () => {
       {/* ------------- mobile-menu------------- */}
       <div
         className={`md:hidden ${
-          showMobileMenu ? "fixed w-1/2" : "h-0 w-0"
+          showMobileMenu ? "fixed w-9/12" : "h-0 w-0"
         } right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}
       >
         <div className="flex justify-end p-6 cursor-pointer">
@@ -58,7 +58,7 @@ const Navbar = () => {
             alt=""
           />
         </div>
-        <div className="flex flex-col gap-32">
+        <div className="flex flex-col items-center gap-80">
           <ul className="flex flex-col items-center gap-4 mt-5 px-5 text-lg font-medium">
             <a
               onClick={() => setShowMobileMenu(false)}
@@ -89,8 +89,11 @@ const Navbar = () => {
               Testimonials
             </a>
           </ul>
-          <div className="flex justify-center">
-            <button className="bg-gray-900 text-white px-8 py-2 rounded-full">
+          <div className="">
+            <button
+              onClick={() => setShowMobileMenu(false)}
+              className="bg-gray-900 text-white px-8 py-2 rounded-full"
+            >
               SignUp
             </button>
           </div>

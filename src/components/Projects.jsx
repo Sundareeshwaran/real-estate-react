@@ -20,7 +20,7 @@ const Projects = () => {
   }, []);
 
   const nextProject = () => {
-    setCurrentIndex((prevIndex) => prevIndex + (1 % projectsData.length));
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % projectsData.length);
   };
   const prevProject = () => {
     setCurrentIndex((prevIndex) =>

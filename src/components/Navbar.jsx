@@ -34,7 +34,10 @@ const Navbar = () => {
             Testimonials
           </a>
         </ul>
-        <button className="hidden md:block bg-white px-8 py-2 rounded-full">
+        <button
+          id="#Contact"
+          className="hidden md:block bg-white px-8 py-2 rounded-full"
+        >
           SignUp
         </button>
         <img
